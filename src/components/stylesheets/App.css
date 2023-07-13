@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link-tag {
+  text-decoration: none;
+}
+/* media queries */
+.right-sidebar {
+  padding: 0;
+  /* background-color: #dad3cb; */
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/52/613/66/pastel-colorful-minimalism-windows-10-vysakhjanan-hd-wallpaper-3f6c88f1aea866a454b7628593085e49.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left-sidebar {
+  /* background-color: rgb(28, 0, 128); */
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/780/920/962/pastel-icecream-gradation-blur-wallpaper-709025c98fe6def338af67664b4654b8.jpg');
+}
+
+.row{
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/780/920/962/pastel-icecream-gradation-blur-wallpaper-709025c98fe6def338af67664b4654b8.jpg');
+}
