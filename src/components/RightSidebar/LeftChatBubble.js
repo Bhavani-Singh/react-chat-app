@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component for rendering the left chat bubble
 function LeftChatBubble({ message, name, image }) {
   return (
     <>
@@ -17,6 +18,8 @@ function LeftChatBubble({ message, name, image }) {
     </>
   );
 }
+
+// Inline styles for the LeftChatBubble component
 const styles = {
   avatar: {
     width: "49px",

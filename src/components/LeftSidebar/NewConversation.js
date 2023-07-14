@@ -1,6 +1,9 @@
 import React from "react";
 
+// Component for creating a new conversation 
 function NewConversation(props) {
+  
+  // Event handler for handling the click event
   let handleClick = () => {
     props.showNewConvoTab(true);
   };

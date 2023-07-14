@@ -18,19 +18,20 @@ import NewConversation from "./LeftSidebar/NewConversation";
 import NewConversationTab from "./LeftSidebar/NewConversationTab";
 
 function App() {
-  const [contacts, setContacts] = useState([]);
-  const [searchfield, setSearchField] = useState("");
-  const [newConvoTab, showNewConvoTab] = useState(false);
-  const user = useSelector((state) => state.user);
-  const stateContacts = useSelector((state) => state.contacts);
-
-  const dispatch = useDispatch();
+  const [contacts, setContacts] = useState([]); // State for storing the contacts
+  const [searchfield, setSearchField] = useState(""); // State for storing the search field value
+  const [newConvoTab, showNewConvoTab] = useState(false); // State for toggling the new conversation tab
+  const user = useSelector((state) => state.user); // Select the user from the Redux store
+  const stateContacts = useSelector((state) => state.contacts); // Select the contacts from the Redux store
+  const dispatch = useDispatch();// Dispatch actions to the Redux store
+  
   // fetch contacts from
   useEffect(() => {
     // dispatch action to store contacts in state
     dispatch(updateContacts(data.profile.contacts));
     setContacts(stateContacts.contacts);
   }, [dispatch, stateContacts.contacts]);
+  
   //handle search change
   const onSearchChange = (event) => {
     setSearchField(event.target.value);

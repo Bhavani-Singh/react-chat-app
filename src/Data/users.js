@@ -1,21 +1,21 @@
 export const data = {
   profile: {
-    id: 1,
-    name: "Bhavani Singh",
+    id: 1, // User's profile ID
+    name: "Bhavani Singh", // User's name
     image:
-      "https://us.123rf.com/450wm/yellowcrest/yellowcrest0911/yellowcrest091100073/5891555-a-portrait-of-an-indian-boy-against-a-black-background.jpg?ver=6",
+      "https://us.123rf.com/450wm/yellowcrest/yellowcrest0911/yellowcrest091100073/5891555-a-portrait-of-an-indian-boy-against-a-black-background.jpg?ver=6", // URL of the user's profile image
     contacts: [
       {
-        id: 2,
-        name: "Vishal",
+        id: 2, // Contact's ID
+        name: "Vishal", // Contact's name
         image:
-          "https://images.pexels.com/photos/1042140/pexels-photo-1042140.jpeg?cs=srgb&dl=pexels-rahul-shah-1042140.jpg&fm=jpg",
+          "https://images.pexels.com/photos/1042140/pexels-photo-1042140.jpeg?cs=srgb&dl=pexels-rahul-shah-1042140.jpg&fm=jpg", // URL of the contact's profile image
         chatlog: [
           {
-            text: "Hi Bro,How are you!",
-            timestamp: "10:01 AM",
-            sender: "user",
-            message_id: 1,
+            text: "Hi Bro,How are you!", // Message text
+            timestamp: "10:01 AM", // Timestamp of the message
+            sender: "user", // Sender of the message (user or contact)
+            message_id: 1, // Unique ID for the message
           },
           {
             text: "I am fine vishal. How are you!",

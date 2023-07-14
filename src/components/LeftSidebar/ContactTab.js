@@ -3,11 +3,14 @@ import ContactAvatar from "./ContactAvatar";
 import ContactLastMessage from "./ContactLastMessage";
 import ContactName from "./ContactName";
 import { Link } from "react-router-dom";
+
+// Component for rendering a tab representing a contact
 function ContactTab(props) {
   const { image, name, chatlog, id } = props.contact;
 
   let length = chatlog.length;
 
+  // Default message when there are no messages in the chatlog
   const noMessage = {
     text: " 0 message Conversation not initiated",
   };

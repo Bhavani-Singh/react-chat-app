@@ -1,7 +1,9 @@
 import React from "react";
 import ContactTab from "./ContactTab";
 
+// Component for the new conversation tab
 function NewConversationTab({ contacts, showNewConvoTab }) {
+  // Event handler for closing the new conversation tab
   let handleClose = () => {
     showNewConvoTab(false);
   };

@@ -5,14 +5,20 @@ import RightChatBubble from "./RightChatBubble";
 import MessageInput from "./MessageInput";
 import { addNewMessage } from "../../actions/contact";
 import ProfileHeader from "../LeftSidebar/ProfileHeader";
+
+// Component for displaying the messages in a conversation
 function MessageBox(props) {
   const [chat, setChat] = useState([]);
   const [length, setLength] = useState();
   const dispatch = useDispatch();
+
+  // Set the initial chat log and length when the component receives new user prop
   useEffect(() => {
     setChat(props.user.chatlog);
     setLength(props.user.chatlog.length);
   }, [props]);
+
+  // Function for adding a new message to the chat log
   let updateMesssages = (message) => {
     let object = {
       text: message,
@@ -20,8 +26,11 @@ function MessageBox(props) {
       sender: "me",
       message_id: length + 1,
     };
+
+    // Dispatch an action to add the new message to the Redux store
     dispatch(addNewMessage(object, props.user.id));
-    // updatelength
+
+    // Update the chat log and length state with the new message
     setLength(object.message_id);
 
     setChat([...chat, object]);

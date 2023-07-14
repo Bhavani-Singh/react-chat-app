@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component for the profile header
 function ProfileHeader({ user }) {
   return (
     <>

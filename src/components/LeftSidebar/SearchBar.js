@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component for the search bar
 function SearchBar({ searchChange }) {
   return (
     <>
@@ -12,6 +13,8 @@ function SearchBar({ searchChange }) {
     </>
   );
 }
+
+// Inline styles for the SearchBar component
 const styles = {
   input: {
     borderRadius: "18px",

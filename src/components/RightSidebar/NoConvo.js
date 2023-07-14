@@ -1,5 +1,7 @@
 import React from "react";
 import "../stylesheets/rightSidebar.css";
+
+// Component for displaying the welcome message when there are no conversations
 function NoConvo() {
   return (
     <div className="no-chat-background">

@@ -1,3 +1,9 @@
+/**
+ * Reducer function for managing the user state
+ *
+ * @param {Object} state - Current state
+ * @returns {Object} - Updated state
+ */
 export default function user(state = {}) {
   return {
     id: 1,

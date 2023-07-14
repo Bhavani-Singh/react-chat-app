@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component for rendering the name of a contact
 function ContactName({ name }) {
   return (
     <div>
@@ -7,6 +8,8 @@ function ContactName({ name }) {
     </div>
   );
 }
+
+// Inline styles for the ContactName component
 const styles = {
   contactText: {
     fontSize: "16px",
